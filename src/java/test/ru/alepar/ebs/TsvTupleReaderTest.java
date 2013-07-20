@@ -11,8 +11,8 @@ import static org.junit.Assert.*;
 
 public class TsvTupleReaderTest {
 
-    private static final String FIXTURE_FILE_1 = "/ru/alepar/ebs/1.tsv";
-    private static final String FIXTURE_FILE_2 = "/ru/alepar/ebs/2.tsv";
+    private static final String FIXTURE_FILE_1 = "/ru/alepar/ebs/TsvTupleReaderTest.1.tsv";
+    private static final String FIXTURE_FILE_2 = "/ru/alepar/ebs/TsvTupleReaderTest.2.tsv";
 
     private static final Key<String> KEY_1 = new StringKey("col1");
     private static final Key<Double> KEY_3 = new DoubleKey("col3");

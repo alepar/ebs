@@ -11,7 +11,7 @@ public class Tuple {
     }
 
     public <T> T get(Key<T> key) {
-        final String val = entries.get(key.name);
+        final String val = getRaw(key);
         if (val == null) {
             return null;
         }
@@ -19,4 +19,7 @@ public class Tuple {
         return key.parse(val);
     }
 
+    public String getRaw(Key<?> key) {
+        return entries.get(key.name);
+    }
 }
